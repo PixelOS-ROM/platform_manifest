@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="lineageos"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-17.1" />
+
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" revision="lineage-17.1" remote="lineageos" >
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+  </project>
+
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineageos" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="lineageos" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineageos" />
+  <project path="external/connectivity" name="android_external_connectivity" remote="lineageos" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineageos" />
+  <project path="external/exfat" name="android_external_exfat" remote="lineageos" />
+  <project path="external/json-c" name="android_external_json-c" remote="lineageos" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="lineageos" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineageos" />
+  <project path="external/selinux" name="android_external_selinux" remote="lineageos" />
+  <project path="external/tinyalsa" name="android_external_tinyalsa" remote="lineageos" />
+  <project path="external/toybox" name="android_external_toybox" remote="lineageos" />
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="lineageos" />
+  <project path="hardware/broadcom/nfc" name="android_hardware_broadcom_nfc" remote="lineageos" />
+  <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="lineageos" />
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" revision="lineage-17.1-caf" remote="lineageos" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sdm845" remote="lineageos" />
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" revision="lineage-17.1-caf-sdm845" remote="lineageos" />
+  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="lineage-17.1-caf-sdm845" remote="lineageos" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sm8150" remote="lineageos" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="lineage-17.1-caf-sm8150" remote="lineageos" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" revision="lineage-17.1-caf-sm8150" remote="lineageos" />
+  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="lineageos" />
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="lineageos" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="lineageos" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="lineageos" />
+  <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineageos" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="lineageos" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="lineageos" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" revision="lineage-17.1-pn5xx" remote="lineageos" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" revision="lineage-17.1-pn5xx" remote="lineageos" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" revision="lineage-17.1-sn100x" remote="lineageos" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="lineageos" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="lineageos" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineageos" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="lineageos" />  
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="lineageos" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="lineageos" />
+
+</manifest>

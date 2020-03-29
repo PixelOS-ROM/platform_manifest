@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="pixelos"
+           fetch="https://github.com/PixelOS-ROM"
+           revision="10" />
+
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixelos" />
+  <project path="frameworks/av" name="frameworks_av" remote="pixelos" />
+  <project path="frameworks/base" name="frameworks_base" remote="pixelos" />
+  <project path="frameworks/native" name="frameworks_native" remote="pixelos" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixelos" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixelos" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixelos" />
+  <project path="system/apex" name="system_apex" remote="pixelos" />
+  <project path="system/bt" name="system_bt" remote="pixelos" />
+  <project path="system/core" name="system_core" remote="pixelos" />
+  <project path="system/extras" name="system_extras" remote="pixelos" />
+  <project path="system/hardware/interfaces" name="system_hardware_interfaces" remote="pixelos" />
+  <project path="system/keymaster" name="system_keymaster" remote="pixelos" />
+  <project path="system/netd" name="system_netd" remote="pixelos" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="pixelos" />
+  <project path="system/vold" name="system_vold" remote="pixelos" />
+  <project path="vendor/pixelos" name="vendor_pixelos" remote="pixelos" />
+
+</manifest>
